@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>ポケモンダメージ計算</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ポケモン ダメージ計算ツール</title>
+  <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
-  <h1>ポケモンダメージ計算</h1>
+  <div id="app"></div>
 
-  <label>攻撃ポケモン:
-    <select id="attacker">
-      <option value="リザードン">リザードン</option>
-      <option value="ガブリアス">ガブリアス</option>
-    </select>
-  </label>
-
-  <label>技:
-    <select id="move">
-      <option value="フレアドライブ">フレアドライブ（物理）</option>
-      <option value="だいもんじ">だいもんじ（特殊）</option>
-    </select>
-  </label>
-
-  <label>攻撃ランク補正:
-    <input type="number" id="atkRank" value="0" min="-6" max="6">
-  </label>
-
-  <label>防御ランク補正:
-    <input type="number" id="defRank" value="0" min="-6" max="6">
-  </label>
-
-  <button onclick="calculate()">計算</button>
-
-  <h2>結果</h2>
-  <div id="result">ここにダメージ結果が表示されます</div>
-
-  <script src="script.js"></script>
+  <script type="module" src="ui/panelBuilder.js"></script>
 </body>
 </html>
